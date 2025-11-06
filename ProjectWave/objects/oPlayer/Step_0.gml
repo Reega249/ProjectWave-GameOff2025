@@ -1,28 +1,34 @@
 var up, down, left, right, shoot;
-x = clamp(x, 16, room_width-16);
-y = clamp(y, view_hport[0], view_hport[0]+492);
+// holds the player within the view of the viewport
+x = clamp(x, 32, room_width-32);
+y = clamp(y, camera_get_view_y(view_camera[0]), camera_get_view_y(view_camera[0]) + 540);
+show_debug_message(camera_get_view_y(view_camera[0]));
+
+// functions that determine if the player is moving
 up =   keyboard_check(vk_up);
 down = keyboard_check(vk_down);
 left = keyboard_check(vk_left);
-right =keyboard_check(vk_right);
-shoot =keyboard_check(ord("R"));
+right = keyboard_check(vk_right);
+shoot = keyboard_check(ord("R"));
 
+// moves the player depending on which buttons are being pressed
 if up {
-	y -= 4;
+	y -= move_speed;
 }
 
 if down {
-	y += 4;
+	y += move_speed;
 }
 
 if left {
-	x -= 4;
+	x -= move_speed;
 }
 
 if right {
-	x += 4;	
+	x += move_speed;	
 }
 
+// determines if the player can shoot
 if shoot && can_shoot {
 	can_shoot = false;
 	alarm[0] = cooldown;
