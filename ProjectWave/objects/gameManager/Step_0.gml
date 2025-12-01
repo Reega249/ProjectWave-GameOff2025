@@ -23,4 +23,11 @@ for (var _i = 0; _i < array_length(ground_layers); _i++)
 		
 	}
 }
+spawner_elements = layer_get_all_elements("spawners");
+
+for (var _i = 0; _i < array_length(spawner_elements); _i++) {
+	var _inst = layer_instance_get_instance(spawner_elements[_i]);
+	_inst.y++;
+	
+}
 

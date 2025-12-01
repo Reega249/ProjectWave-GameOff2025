@@ -1,0 +1,22 @@
+{
+  "$GMPath":"",
+  "%Name":"p_shoot_path",
+  "closed":true,
+  "kind":1,
+  "name":"p_shoot_path",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":192.0,"y":832.0,},
+    {"speed":100.0,"x":480.0,"y":832.0,},
+    {"speed":100.0,"x":768.0,"y":832.0,},
+    {"speed":100.0,"x":768.0,"y":896.0,},
+    {"speed":100.0,"x":480.0,"y":896.0,},
+    {"speed":100.0,"x":192.0,"y":896.0,},
+  ],
+  "precision":10,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
