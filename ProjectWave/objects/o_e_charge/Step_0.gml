@@ -30,7 +30,6 @@ if (o_e_attacking) {
 	x = x+ (Normalized_vector_x * (move_speed * 3));
 	y = y+ (Normalized_vector_y * (move_speed * 3));
 }
-show_debug_message(o_e_attacking);
 
 
 

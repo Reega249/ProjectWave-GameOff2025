@@ -1,18 +1,22 @@
 // Inherit the parent event
 // handles destruction of object once hp = 0
+if (hp <= 0) {
+	instance_create_layer(x,y,"Instances",o_wave);
+}
 event_inherited();
 
 // handles enemy movement
 // if the player is in front of the enemy
 if (y < oPlayer.y) {
 	if (x <= oPlayer.x + 10) && (x >= oPlayer.x - 10) {
-		if (!o_e_s_cooldown) {
+		if (!o_e_s_cooldown) && (!o_e_attacking) {
 		o_e_attacking = true;
 		path_speed = 0;
+		alarm[2] = 10;
 		}
 	}
 	// checks if the player is in front of the enemy but not to close
-	if (y < oPlayer.y = (sprite_height * 0.5 + oPlayer.sprite_height * 0.5)) {
+	else if (y < oPlayer.y = (sprite_height * 0.5 + oPlayer.sprite_height * 0.5)) {
 		//target players x position
 		target_x = oPlayer.x
 		// target ahead of the players y position
@@ -69,5 +73,3 @@ if (o_e_attacking) {
 	alarm[1] = attack_speed_timer;
 	instance_create_layer(x,y, "Instances", o_e_blast);
 }
-
-show_debug_message(target_x);

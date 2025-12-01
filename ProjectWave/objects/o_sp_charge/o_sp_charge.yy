@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"spawners",
-    "path":"folders/Objects/spawners.yy",
+    "path":"folders/Objects/levelDesign/spawners.yy",
   },
   "parentObjectId":{
     "name":"o_sp",
@@ -37,5 +37,5 @@
     "path":"sprites/tempSpawner/tempSpawner.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

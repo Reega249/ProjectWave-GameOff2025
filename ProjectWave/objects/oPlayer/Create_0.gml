@@ -21,6 +21,8 @@ friction_ = 0.3;
 mass = 1.5;
 _delta_time = 1;
 
+phys_attacking = false;
+
 // variables for handling health
 p_hp = 10;
 

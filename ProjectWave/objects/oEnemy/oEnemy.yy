@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"enemies",
-    "path":"folders/Objects/enemies.yy",
+    "path":"folders/Objects/levelDesign/enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -7,7 +7,9 @@ x = clamp(x, 32, room_width-32);
 if (y < oPlayer.y) {
 	if (x <= oPlayer.x + 10) && (x >= oPlayer.x - 10) {
 		if (!o_e_s_cooldown) && (!o_e_attacking) {
-		o_e_attacking = true;
+			o_e_attacking = true;
+			path_speed = 0;
+			alarm[2] = 10;
 		}
 	}
 	// checks if the player is in front of the enemy but not to close
@@ -65,9 +67,6 @@ else {
 if (o_e_attacking) {
 	o_e_s_cooldown = true;
 	o_e_attacking = false;
-	path_speed = 0;
 	alarm[1] = attack_speed_timer;
 	instance_create_layer(x,y, "Instances", o_e_blast);
 }
-
-show_debug_message(target_x);

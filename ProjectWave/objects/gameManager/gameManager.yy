@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"controllers",
-    "path":"folders/Objects/controllers.yy",
+    "path":"folders/Objects/levelDesign/controllers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

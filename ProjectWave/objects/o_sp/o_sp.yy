@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"spawners",
-    "path":"folders/Objects/spawners.yy",
+    "path":"folders/Objects/levelDesign/spawners.yy",
   },
   "parentObjectId":null,
   "persistent":false,
