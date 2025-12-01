@@ -69,6 +69,7 @@
     {"id":{"name":"sBlast","path":"sprites/sBlast/sBlast.yy",},},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
+    {"id":{"name":"Sprite13","path":"sprites/Sprite13/Sprite13.yy",},},
     {"id":{"name":"startButton","path":"sprites/startButton/startButton.yy",},},
     {"id":{"name":"starTiles","path":"sprites/starTiles/starTiles.yy",},},
     {"id":{"name":"tempSpawner","path":"sprites/tempSpawner/tempSpawner.yy",},},
@@ -82,8 +83,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"titleScreen","path":"rooms/titleScreen/titleScreen.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
